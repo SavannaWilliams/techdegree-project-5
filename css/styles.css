@@ -44,6 +44,6 @@ img {
   Base Layout Styles
 ==================================== */
 
-.gallery-thumbnail {
+.gallery img {
   justify-self: center;
 }
