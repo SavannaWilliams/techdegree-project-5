@@ -27,10 +27,6 @@ input {
 }
 
 main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(3, 1fr);
-  gap: 30px;
   max-width: 60%;
   margin: 0 auto;
 }
@@ -44,6 +40,13 @@ img {
   Base Layout Styles
 ==================================== */
 
-.gallery img {
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.gallery a{
   justify-self: center;
 }
