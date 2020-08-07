@@ -8,10 +8,13 @@ function search() {
     let searchText = input.value.toLowerCase();
 
     for(i = 0; i < gallerySize; i++){
-        console.log(images[i].getAttribute('data-caption'));
-    }
+        let currentCaption = images[i].getAttribute('data-caption').toLowerCase();
 
+        if (currentCaption.indexOf(searchText) > -1) {
+            images[i].style.display = '' ;
+        } else {
+            images[i].style.display = 'none';
+        }
+    }
 }
 
-
-// .querySelectorAll('[data-caption]')
