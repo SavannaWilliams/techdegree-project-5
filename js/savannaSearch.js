@@ -7,7 +7,7 @@ const input = document.getElementById('search');
 function search() {
     let searchText = input.value.toLowerCase();
 
-    for(i = 0; i < gallerySize; i++){
+    for(let i = 0; i < gallerySize; i++){
         let currentCaption = images[i].getAttribute('data-caption').toLowerCase();
 
         if (currentCaption.indexOf(searchText) > -1) {
